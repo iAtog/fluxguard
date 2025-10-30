@@ -1,0 +1,1 @@
+![Vista](https://raw.githubusercontent.com/iAtog/fluxguard/main/Captura.PNG)
