@@ -48,7 +48,6 @@
             // 
             this.projectUrlTxt.Location = new System.Drawing.Point(12, 12);
             this.projectUrlTxt.Name = "projectUrlTxt";
-            this.projectUrlTxt.ReadOnly = true;
             this.projectUrlTxt.Size = new System.Drawing.Size(568, 20);
             this.projectUrlTxt.TabIndex = 0;
             this.projectUrlTxt.Text = "C:\\Users\\soperaciones\\Desktop\\neuroflux";
