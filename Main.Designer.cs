@@ -8,7 +8,7 @@
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Clean up any resources being used.
+        /// Clean up any resources being being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -41,6 +41,8 @@
             this.checkTimer = new System.Windows.Forms.Timer(this.components);
             this.backendLogBox = new System.Windows.Forms.RichTextBox();
             this.embeddingsLogBox = new System.Windows.Forms.RichTextBox();
+            this.startWithWindowsChk = new System.Windows.Forms.CheckBox();
+            this.startMinimizedBtn = new System.Windows.Forms.Button();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +52,7 @@
             this.projectUrlTxt.Name = "projectUrlTxt";
             this.projectUrlTxt.Size = new System.Drawing.Size(568, 20);
             this.projectUrlTxt.TabIndex = 0;
-            this.projectUrlTxt.Text = "C:\\Users\\soperaciones\\Desktop\\neuroflux";
+            this.projectUrlTxt.Text = "C:\\Users\\soperaciones\\Desktop\\pastoflux";
             // 
             // notifyIcon1
             // 
@@ -137,12 +139,35 @@
             this.embeddingsLogBox.TabIndex = 10;
             this.embeddingsLogBox.Text = "";
             // 
+            // startWithWindowsChk
+            // 
+            this.startWithWindowsChk.AutoSize = true;
+            this.startWithWindowsChk.Location = new System.Drawing.Point(138, 279);
+            this.startWithWindowsChk.Name = "startWithWindowsChk";
+            this.startWithWindowsChk.Size = new System.Drawing.Size(122, 17);
+            this.startWithWindowsChk.TabIndex = 11;
+            this.startWithWindowsChk.Text = "Iniciar con Windows";
+            this.startWithWindowsChk.UseVisualStyleBackColor = true;
+            this.startWithWindowsChk.CheckedChanged += new System.EventHandler(this.startWithWindowsChk_CheckedChanged);
+            // 
+            // startMinimizedBtn
+            // 
+            this.startMinimizedBtn.Location = new System.Drawing.Point(12, 275);
+            this.startMinimizedBtn.Name = "startMinimizedBtn";
+            this.startMinimizedBtn.Size = new System.Drawing.Size(120, 23);
+            this.startMinimizedBtn.TabIndex = 12;
+            this.startMinimizedBtn.Text = "Iniciar minimizado";
+            this.startMinimizedBtn.UseVisualStyleBackColor = true;
+            this.startMinimizedBtn.Click += new System.EventHandler(this.startMinimizedBtn_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(587, 276);
+            this.ClientSize = new System.Drawing.Size(587, 303);
             this.Controls.Add(this.projectUrlTxt);
+            this.Controls.Add(this.startWithWindowsChk);
+            this.Controls.Add(this.startMinimizedBtn);
             this.Controls.Add(this.backendToggle);
             this.Controls.Add(this.backendEstado);
             this.Controls.Add(this.embeddingsToggle);
@@ -176,6 +201,8 @@
         private System.Windows.Forms.Timer checkTimer;
         private System.Windows.Forms.RichTextBox backendLogBox;
         private System.Windows.Forms.RichTextBox embeddingsLogBox;
+        private System.Windows.Forms.CheckBox startWithWindowsChk;
+        private System.Windows.Forms.Button startMinimizedBtn;
     }
 }
 
