@@ -52,12 +52,12 @@
             this.projectUrlTxt.Name = "projectUrlTxt";
             this.projectUrlTxt.Size = new System.Drawing.Size(568, 20);
             this.projectUrlTxt.TabIndex = 0;
-            this.projectUrlTxt.Text = "C:\\Users\\soperaciones\\Desktop\\pastoflux";
+            this.projectUrlTxt.Text = "C:\\Users\\soperaciones\\Desktop\\pastolink";
             // 
             // notifyIcon1
             // 
             this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
-            this.notifyIcon1.Text = "Fluxguard (Pastoflux)";
+            this.notifyIcon1.Text = "Fluxguard";
             this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
             // 
             // contextMenuStrip1
@@ -179,7 +179,7 @@
             this.MaximizeBox = false;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Fluxguard - servicio para iniciar Pastoflux";
+            this.Text = "Fluxguard - servicio para iniciar Pastolink";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Main_Load);
             this.contextMenuStrip1.ResumeLayout(false);
